@@ -18,13 +18,29 @@ export type ProjectCaseStudy = {
 export const site = {
   brand: "Kale Developers",
   tagline: "Full‑stack developer • Web, Mobile & DevOps",
-  location: "Remote / Your City",
-  availability: "Available for freelance",
-  email: "you@example.com",
+  location: "Remote · Worldwide",
+  availability: "Open for freelance & contracts",
+  email: "hello@kaledevelopers.dev",
   socials: {
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/in/",
-    instagram: "https://www.instagram.com/",
+    github: "https://github.com/rajdeepkale11",
+    linkedin: "https://www.linkedin.com/in/rajdeepkale11/",
+    instagram: "https://www.instagram.com/rajdeepkale11/",
+  },
+  /** Contact + Google Form wiring (submitted via /api/contact). */
+  contact: {
+    googleFormEmbedSrc:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd2whDfojV7M2IE7EE6vez2j8C1cRFynlbf6DyC2ZnAwqBfXA/viewform?embedded=true",
+    googleFormViewUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd2whDfojV7M2IE7EE6vez2j8C1cRFynlbf6DyC2ZnAwqBfXA/viewform",
+    /** Path segment after https://docs.google.com/forms (used by API to post responses). */
+    googleFormPath: "/d/e/1FAIpQLSd2whDfojV7M2IE7EE6vez2j8C1cRFynlbf6DyC2ZnAwqBfXA",
+    googleFormEntries: {
+      mobile: "entry.1047711222",
+      applicationType: "entry.2144009972",
+      shortDescription: "entry.1937506072",
+      timeline: "entry.1681867448",
+      budget: "entry.729449544",
+    },
   },
   cta: {
     primary: { label: "Book a call", href: "#contact" },

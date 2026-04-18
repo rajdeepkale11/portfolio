@@ -20,15 +20,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.brand} — Full‑stack Freelancer`,
+    default: `${site.brand} — ${site.tagline}`,
     template: `%s — ${site.brand}`,
   },
-  description:
-    "A futuristic developer portfolio showcasing full‑stack, mobile, and DevOps services.",
+  description: `${site.brand} — ${site.tagline} Portfolio, projects, and contact.`,
   openGraph: {
-    title: `${site.brand} — Full‑stack Freelancer`,
-    description:
-      "Futuristic portfolio showcasing full‑stack, mobile, and DevOps services.",
+    title: `${site.brand} — ${site.tagline}`,
+    description: `${site.brand} builds modern web apps, mobile experiences, and cloud-forward delivery.`,
     type: "website",
   },
 };

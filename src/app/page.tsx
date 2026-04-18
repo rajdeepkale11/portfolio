@@ -9,6 +9,7 @@ import { site } from "@/lib/site";
 import { HeroGlowScope } from "@/components/HeroGlowScope";
 import { ProjectMarquee } from "@/components/ProjectMarquee";
 import { AboutSection } from "@/components/AboutSection";
+import { ContactGoogleForm } from "@/components/ContactGoogleForm";
 
 export default function Home() {
   return (
@@ -255,7 +256,7 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Projects"
                 title="Work that speaks for itself"
-                description="Selected case studies — swap in your own ships, metrics, and live links in site.projects."
+                description="Hands-on builds across observability, payments, field mobile, compliance, and real-time collaboration."
               />
             </Reveal>
           </div>
@@ -307,23 +308,15 @@ export default function Home() {
 
             <Reveal y={16} delay={0.1}>
               <div className="glass neo-border rounded-3xl p-6">
-              <p className="text-sm font-semibold text-[color:var(--foreground)]">
-                Lead form (placeholder)
-              </p>
-              <p className="mt-2 text-sm leading-7 text-muted">
-                We can connect this to a free form backend (Formspree / Tally /
-                Google Forms) later.
-              </p>
-              <div className="mt-6 grid gap-3">
-                {["Name", "Email", "Message"].map((label) => (
-                  <div
-                    key={label}
-                    className="rounded-2xl bg-white/5 px-4 py-3 text-sm text-muted ring-1 ring-white/10"
-                  >
-                    {label}
-                  </div>
-                ))}
-              </div>
+                <p className="text-sm font-semibold text-[color:var(--foreground)]">
+                  Project inquiry
+                </p>
+                <p className="mt-2 text-sm leading-7 text-muted">
+                  Send a structured note through the form — timeline, stack, and what “done” looks like on your side.
+                </p>
+                <div className="mt-6">
+                  <ContactGoogleForm />
+                </div>
               </div>
             </Reveal>
           </div>
