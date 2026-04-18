@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1067" viewBox="0 0 800 1067" fill="none">
+  <defs>
+    <linearGradient id="av-bg" x1="120" y1="0" x2="680" y2="1067" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07080f"/>
+      <stop offset="0.45" stop-color="#12142a"/>
+      <stop offset="1" stop-color="#0c1224"/>
+    </linearGradient>
+    <linearGradient id="av-visor" x1="200" y1="380" x2="600" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e1b4b"/>
+      <stop offset="0.5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="av-glow" x1="400" y1="200" x2="400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c3aed" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#2dd4bf" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="av-rim" cx="50%" cy="42%" r="55%">
+      <stop stop-color="rgba(124,92,255,0.35)"/>
+      <stop offset="0.6" stop-color="rgba(45,212,191,0.12)"/>
+      <stop offset="1" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <filter id="av-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="1067" fill="url(#av-bg)"/>
+  <ellipse cx="400" cy="480" rx="320" ry="380" fill="url(#av-rim)" opacity="0.9"/>
+  <ellipse cx="400" cy="520" rx="260" ry="300" fill="url(#av-glow)" opacity="0.55"/>
+
+  <!-- halo -->
+  <ellipse cx="400" cy="360" rx="200" ry="48" stroke="rgba(167,139,250,0.35)" stroke-width="2" fill="none" opacity="0.85"/>
+  <ellipse cx="400" cy="360" rx="220" ry="56" stroke="rgba(45,212,191,0.2)" stroke-width="1" fill="none"/>
+
+  <!-- helmet / head -->
+  <path
+    d="M220 280 C220 180 280 120 400 120 C520 120 580 180 580 280 L580 420 C580 520 540 600 400 640 C260 600 220 520 220 420 Z"
+    fill="#0f111a"
+    stroke="rgba(148,163,184,0.25)"
+    stroke-width="1.5"
+  />
+  <path
+    d="M240 300 C240 210 290 160 400 160 C510 160 560 210 560 300 L558 400 C558 480 520 560 400 595 C280 560 242 480 240 400 Z"
+    fill="url(#av-visor)"
+    opacity="0.95"
+  />
+
+  <!-- visor glass highlight -->
+  <path d="M260 340 Q400 300 540 340 L535 380 Q400 340 265 380 Z" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- eyes -->
+  <rect x="268" y="410" width="88" height="10" rx="5" fill="#5eead4" opacity="0.9" filter="url(#av-soft)"/>
+  <rect x="444" y="410" width="88" height="10" rx="5" fill="#a78bfa" opacity="0.9" filter="url(#av-soft)"/>
+  <rect x="272" y="412" width="80" height="4" rx="2" fill="rgba(255,255,255,0.5)"/>
+  <rect x="448" y="412" width="80" height="4" rx="2" fill="rgba(255,255,255,0.45)"/>
+
+  <!-- nose bridge line -->
+  <path d="M400 430 L400 500" stroke="rgba(148,163,184,0.2)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- jaw / chin tech -->
+  <path d="M300 540 Q400 620 500 540" stroke="rgba(94,234,212,0.25)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="400" cy="565" r="6" fill="rgba(124,92,255,0.5)"/>
+  <circle cx="400" cy="565" r="2" fill="rgba(255,255,255,0.8)"/>
+
+  <!-- shoulders hint -->
+  <path d="M120 720 Q400 640 680 720 L680 780 Q400 700 120 780 Z" fill="#0a0c14" opacity="0.85"/>
+  <path d="M160 700 Q400 620 640 700" stroke="rgba(124,92,255,0.15)" stroke-width="1" fill="none"/>
+
+  <!-- corner accents -->
+  <path d="M100 200 L140 200 M100 200 L100 240" stroke="rgba(167,139,250,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M700 200 L660 200 M700 200 L700 240" stroke="rgba(45,212,191,0.3)" stroke-width="2" stroke-linecap="round"/>
+</svg>
